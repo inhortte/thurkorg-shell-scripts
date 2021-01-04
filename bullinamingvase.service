@@ -1,0 +1,11 @@
+[Unit]
+Description=Check and renew Let's Encrypt certificates
+Wants=bullinamingvase.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/polaris/rummaging_round/zsh/bullinamingvase.sh
+
+[Install]
+WantedBy=multi-user.target
+
